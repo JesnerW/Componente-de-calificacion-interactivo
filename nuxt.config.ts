@@ -6,6 +6,8 @@ export default defineNuxtConfig({
       title: "Frontend Mentor | Interactive rating component",
       viewport: 'width=device-width, initial-scale=1',
       charset: "UTF-8",
-    }
+    },
+    baseURL: "/Componente-de-calificacion-interactivo/",
+    buildAssetsDir: "assets"
   }
 })
