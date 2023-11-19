@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass";
+  color: var(--White);
+}
+:root {
+  /* ### Primary */
+  --Orange: hsl(25, 97%, 53%);
+  /* ### Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(217, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+}
+main {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.card {
+  width: 412px;
+  height: 416px;
+  border-radius: 30px;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 32px;
+  .start {
+    width: 48px;
+    height: 48px;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+  }
+  & h1 {
+    margin-top: 37px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 9px;
+  }
+  & p {
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--Light-Grey);
+    margin-bottom: 23px;
+  }
+  .option {
+    display: flex;
+    gap: 21.5px;
+    margin-bottom: 32px;
+    .number {
+      font-weight: 700;
+      color: var(--Medium-Grey);
+      width: 51px;
+      height: 51px;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        color: var(--White);
+        background-color: var(--Orange);
+      }
+    }
+    .active {
+      background-color: var(--Medium-Grey);
+      color: var(--White);
+    }
+  }
+  & button {
+    width: 341px;
+    height: 45px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    border-radius: 22.5px;
+    border: none;
+    color: var(--White);
+    background-color: var(--Orange);
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background-color: var(--White);
+      color: var(--Orange);
+    }
+  }
+}
+.finish {
+  text-align: center;
+  & img {
+    margin-top: 13px;
+    margin-bottom: 32px;
+  }
+  .info {
+    border-radius: 22.5px;
+    margin: 0 auto;
+    width: 193px;
+    height: 32px;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--Orange);
+  }
+  & h2 {
+    margin-top: 32px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  & p {
+    margin-top: 7px;
+    font-size: 15px;
+    line-height: 24px;
+    width: 340px;
+  }
+}
